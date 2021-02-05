@@ -8,7 +8,7 @@ A monolithic web API built on NodeJS/Express
 - [ExpressJS](https://expressjs.com/) as the middleware
 - [TediousJS](https://github.com/tediousjs/tedious) for SQL in Node
 - [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/)
-- [Azure App Service] (https://azure.microsoft.com/en-us/services/app-service/)
+- [Azure App Service](https://azure.microsoft.com/en-us/services/app-service/)
 
 ## What did I learn?
 - Cloud deployment of NodeJS apps to Amazon AWS and Microsoft Azure infrastructure.
