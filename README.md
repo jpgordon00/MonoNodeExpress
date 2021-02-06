@@ -2,6 +2,7 @@
 A monolithic web API built on NodeJS/Express
 
 ## What does it do?
+- Authorization through temporary token submittal
 
 ## What frameworks/resources does it use?
 - [NodeJS](https://nodejs.org/en/) and JavaScript (ECMAScript 39)
@@ -26,4 +27,12 @@ A monolithic web API built on NodeJS/Express
         - Microservices require inter-application [communication](https://solace.com/blog/microservices-choreography-vs-orchestration/). No longer is it feesible to use simple timers or scheduled tasks because each instance of the application would be doing the same tasks. Many [Microservice frameworks](https://github.com/mfornos/awesome-microservices) solve this issue. There are some SDKs that do this, such as ZooKeeper. Various [SaaS](https://docs.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/scalable-available-multi-container-microservice-applications) applications can also achieve orchestration. 
     - A lead Netflix engineer gives [a detailed history](https://www.youtube.com/watch?v=CZ3wIuvmHeM) of the evolution of their technology/backend, making it clear that the lack of modularity and cripple larger projects. Large applications can suffer from a large amount of dependencies that can make updating their software extremely time intensive.
  - API routes should be clearly defined and accesible to programmers, clients and servers. By avoiding hard-coded URLS or IP addresses the application becomes easier to update and more modular; most Microservice frameworks provide this functionality.
+ 
+ ## Future Improvements
+ - Rewrite this applciation into an application per serivce using microservices.
+ - Avoid chained database calls one-after-another. Write queries to do more in each query.
+ - Hash passwords and emails. Instead of storing raw password and other sensitive data from the server into a database, store (hashed data)[https://jwt.io/]. NodeJS does not have hashing built in, so a third-party SDK like the [Crypto](https://nodejs.org/api/crypto.html) package is required.
+ - Replace string token authorization with [JWT](https://jwt.io/) authorization. This allows for a client-server handshake and potentially encrypted connection data. The connection it self is not encrypted or using SSL or HTTPS.
+ - Use headers to authorize user instead of a query parameter. This includes JWT fields for encryption.
+ - Allow flexibility in query parameters and JSON post data.
     
