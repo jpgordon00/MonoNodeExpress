@@ -32,7 +32,7 @@ A monolithic web API built on NodeJS/Express
  - Rewrite this applciation into an application per serivce using microservices.
  - Avoid chained database calls one-after-another. Write queries to do more in each query.
  - Hash passwords and emails. Instead of storing raw password and other sensitive data from the server into a database, store (hashed data)[https://jwt.io/]. NodeJS does not have hashing built in, so a third-party SDK like the [Crypto](https://nodejs.org/api/crypto.html) package is required.
- - Replace string token authorization with [JWT](https://jwt.io/) authorization. This allows for a client-server handshake and potentially encrypted connection data. The connection it self is not encrypted or using SSL or HTTPS.
+ - Replace string token authorization with [JWT](https://jwt.io/)authorization. This allows for a client-server handshake and potentially encrypted connection data. The connection it self is not encrypted or using SSL or HTTPS.
  - Use headers to authorize user instead of a query parameter. This includes JWT fields for encryption.
  - Allow flexibility in query parameters and JSON post data.
     
