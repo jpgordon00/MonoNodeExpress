@@ -8,7 +8,7 @@ A monolithic web API built on NodeJS/Express
 - [ExpressJS](https://expressjs.com/) as the middleware
 - [TediousJS](https://github.com/tediousjs/tedious) for SQL in Node
 - [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/). Deployed this application in Elastic Beanstalk from source code.
-- [AWS ECS] (https://aws.amazon.com/ecs/?whats-new-cards.sort-by=item.additionalFields.postDateTime&whats-new-cards.sort-order=desc&ecs-blogs.sort-by=item.additionalFields.createdDate&ecs-blogs.sort-order=desc). Deployed this application on AWS ECS as a container
+- [AWS ECS](https://aws.amazon.com/ecs/?whats-new-cards.sort-by=item.additionalFields.postDateTime&whats-new-cards.sort-order=desc&ecs-blogs.sort-by=item.additionalFields.createdDate&ecs-blogs.sort-order=desc). Deployed this application on AWS ECS as a container
 - [Azure App Service](https://azure.microsoft.com/en-us/services/app-service/). Deplyoed this application as an Azure App Service from soruce code.
 
 ## What did I learn?
